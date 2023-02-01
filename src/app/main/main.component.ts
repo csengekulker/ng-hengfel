@@ -18,11 +18,39 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  onKeyUp(event: any) { }
+  onKeyUp(event: any) { 
+    if (event.key == "Enter") {
+      this.eventHandler()
+    } 
+  }
 
-  eventHandler() { }
+  eventHandler() { 
+    let radius = Number(this.radius.value)
+    let height = Number(this.height.value)
 
-  reset() { }
+    let surface = this.calcSurface(radius, height)
+
+    this.resultVisible = true
+    this.resetVisible = true
+
+    this.surface.setValue(String(surface + " cm"))
+  }
+
+  calcSurface(radius: number, height: number) {
+
+    let sum = radius + height
+    let result = 2*Math.PI*radius*sum
+
+    return result
+  }
+
+  reset() { 
+    this.radius.setValue('')
+    this.height.setValue('')
+
+    this.resultVisible = false
+    this.resetVisible = false
+  }
 
   ngOnInit(): void {
   }
