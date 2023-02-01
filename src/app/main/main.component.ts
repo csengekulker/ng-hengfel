@@ -1,3 +1,13 @@
+/*
+* File: main.component.ts
+* Author: Balogh Csenge
+* Copyright: 2023, Balogh Csenge
+* Group: Szoft_II_N
+* Date: 2022-02-01
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 

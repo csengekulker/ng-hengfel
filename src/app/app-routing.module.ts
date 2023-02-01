@@ -1,3 +1,13 @@
+/*
+* File: app-routing.module.ts
+* Author: Balogh Csenge
+* Copyright: 2023, Balogh Csenge
+* Group: Szoft_II_N
+* Date: 2022-02-01
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
