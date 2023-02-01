@@ -1,0 +1,56 @@
+<div class="form p-3">
+    <h2>A henger adatai</h2>
+    <div class="mt-3">
+        <input 
+            type="text"
+            placeholder="Sugar (cm)"
+            [formControl]="radius"
+            class="form-control"
+        >
+    </div>
+    <div class="mt-3">
+        <input 
+            type="text"
+            placeholder="Hossz (cm)"
+            [formControl]="height"
+            class="form-control"
+            (keyup)="onKeyUp($event)"
+        >
+    </div>
+
+    <div class="mt-3 justify-content-center row">
+        <div class="col-6">
+            <input
+                type="submit"
+                name=""
+                id=""
+                class="btn btn-primary w-100"
+                (click)="eventHandler()">
+        </div>
+
+        <div class="col-6">
+            <input
+                *ngIf="resetVisible"
+                type="reset"
+                class="btn btn-secondary w-100"
+                (click)="reset()">
+        </div>
+    </div>
+
+    <!-- results -->
+
+    <div class="mt-3" *ngIf="resultVisible">
+        <h3>Eredmény</h3>
+        <div class="mt-3">
+
+        <div class="mt-3">
+            <input
+                type="text"
+                readonly
+                placeholder="Felszin (cm^2)"
+                [formControl]="surface"
+                class="form-control"
+            >
+        </div>
+    </div>
+</div>
