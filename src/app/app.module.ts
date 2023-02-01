@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    MainComponent
+    MainComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,

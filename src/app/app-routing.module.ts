@@ -6,8 +6,8 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path:'/about', component: AboutComponent},
-  {path:'/github', component: GithubComponent}
+  {path:'about', component: AboutComponent},
+  {path:'github', component: GithubComponent}
 ];
 
 @NgModule({
